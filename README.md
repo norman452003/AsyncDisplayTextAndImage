@@ -1,0 +1,7 @@
+# AsyncDisplayTextAndImage
+AsyncDisplayTextAndImage
+使用CoreText完成富文本的显示，主要对网址和@name的筛选过滤，能监听文本上网址和@name的点击事件。
+在传入模型的时候异步解析，生成一张显示文字的图片展示。
+每个cell里面的小图在下载完成之后调用GCD的group合成一张大图展示。
+头像图片在下载完后先生成一个圆角的图片，避免离屏渲染。
+里面用到了检测流畅度的FPSLabel和YYWebImage
